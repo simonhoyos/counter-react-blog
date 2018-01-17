@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-function Button() {
+const Button = () => {
   return <button className='add-button' type='button'>+</button>
 }
 
