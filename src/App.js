@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from './Button';
+import Button from './Button/Button';
 import './App.css';
 
 class App extends Component {
@@ -15,8 +15,10 @@ class App extends Component {
     const increment = document.querySelector('.js-increment');
     const decrement = document.querySelector('.js-decrement');
 
-    increment.addEventListener('click', this.onIncrementClick);
-    decrement.addEventListener('click', this.onDecrementClick);
+    if(increment && decrement) {
+      increment.addEventListener('click', this.onIncrementClick);
+      decrement.addEventListener('click', this.onDecrementClick);
+    }
   }
 
   onIncrementClick = () => {
