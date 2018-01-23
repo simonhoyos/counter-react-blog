@@ -11,16 +11,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    const increment = document.querySelector('.js-increment');
-    const decrement = document.querySelector('.js-decrement');
-
-    if(increment && decrement) {
-      increment.addEventListener('click', this.onIncrementClick);
-      decrement.addEventListener('click', this.onDecrementClick);
-    }
-  }
-
   onIncrementClick = () => {
     this.setState({
       counter: this.state.counter + 1,
@@ -40,16 +30,16 @@ class App extends Component {
           <div className='counter__state'>
             {this.state.counter}
           </div>
-          <div className='coutner__buttons'>
+          <div className='counter__buttons'>
             <Button
-              className='js-increment'
               primary={true}
+              handleClick={this.onIncrementClick}
             >
               +
             </Button>
             <Button
-              className='js-decrement'
               primary={false}
+              handleClick={this.onDecrementClick}
             >
               -
             </Button>
