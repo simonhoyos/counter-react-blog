@@ -9,4 +9,4 @@ change branch if you want to check different tutorials.
 
 * `git checkout componentes`: [functional and class components](https://medium.com/@shmesa23/componente-zaci%C3%B3n-y-create-react-app-df32e798e802).
 * `git checkout props-and-state`: [Components' props and state](https://medium.com/@shmesa23/propiedades-y-estado-de-los-componentes-93fae49033f5).
-* `git checkout events`: [Handling React events](https://).
+* `git checkout events`: [Handling React events](https://medium.com/@shmesa23/eventos-en-react-b53179ec9683).
